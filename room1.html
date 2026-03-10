@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room 1 — The Shadow Puzzle | Escape The Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+    ===== SECRET DEVELOPER NOTE =====
+    Hey curious player! You found an HTML comment.
+    Here's your FIRST CLUE:
+    "What is cast by an object when light falls on it?"
+    Think of a single word. You know this one!
+    =================================
+    -->
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">🔐 Escape<span>TheWeb</span></h1>
+        <a href="index.html" class="nav-back">← Back to Home</a>
+    </header>
+
+    <div class="room-container">
+
+        <div class="timer-display" id="timerDisplay">⏱ Time: 00:00</div>
+
+        <div class="room-progress">
+            <span class="progress-dot active">1</span>
+            <span class="progress-line"></span>
+            <span class="progress-dot">2</span>
+            <span class="progress-line"></span>
+            <span class="progress-dot">🏆</span>
+        </div>
+
+        <h2 class="room-title">🔍 Room 1 — The Shadow Puzzle</h2>
+        <p class="room-desc">
+            Look carefully around this page. Clues are hidden in different places.
+            Find the secret word and type it below to unlock Room 2.
+        </p>
+
+        <div class="clue-box" title="There is more than meets the eye here...">
+            <p>💡 <strong>Clue Box A</strong> — hover over me slowly and listen.</p>
+            <!--
+                HINT: The invisible text below is only hidden by CSS color.
+                Try hovering the box, or use Ctrl+A to select all text on the page.
+            -->
+            <p class="hidden-clue">
+                The answer is what you cannot touch, but always follows you on a sunny day.
+            </p>
+        </div>
+
+        <div class="clue-box" data-fragment="sha" data-secret="It rhymes with 'meadow'.">
+            <p>🔎 <strong>Clue Box B</strong> — Look deeper. Some things are invisible to the naked eye.</p>
+            <!--
+                INSPECTOR'S CORNER:
+                You're getting warmer...
+                Combine what you see with what you know.
+            -->
+            <p class="hidden-clue" id="inspectorHint">
+                Six letters. It follows you everywhere on a sunny day.
+            </p>
+        </div>
+
+        <div class="clue-box ascii-hint">
+            <p>🖥️ <strong>Clue Box C</strong> — What does the sun leave behind?</p>
+            <pre class="ascii-art">
+   ☀️
+    |
+   🧑  ← You
+    |____
+         \_____ ← ?
+            </pre>
+            <p class="hidden-clue">The dark shape cast behind you in sunlight — that's your answer.</p>
+        </div>
+
+        <div class="sequence-section">
+            <p class="sequence-hint">
+                🪐 <strong>Bonus Puzzle:</strong> Click the cosmic objects in the correct order.
+                The correct order is hinted in the description above the buttons.
+            </p>
+            <div class="click-sequence">
+                <div class="seq-item" id="moon">🌙 Moon</div>
+                <div class="seq-item" id="star">⭐ Star</div>
+                <div class="seq-item" id="planet">🪐 Planet</div>
+            </div>
+            <p class="feedback" id="seqFeedback"></p>
+
+            <div id="seqClueRevealed" class="revealed-clue">
+                🌟 Bonus clue unlocked: <em>"The DARK silhouette behind every object in sunlight."</em>
+                <br><small>(Now you know the answer. Go type it below!)</small>
+            </div>
+        </div>
+
+        <div class="code-form">
+            <label for="room1Input">🔑 Enter the secret word to unlock Room 2:</label>
+            <input
+                type="text"
+                id="room1Input"
+                placeholder="Type your answer here..."
+                autocomplete="off"
+            />
+            <button id="room1SubmitBtn">🔓 Submit Answer</button>
+            <p class="feedback" id="room1Feedback"></p>
+        </div>
+
+        <p class="room-hint-footer">
+            💬 Stuck? Try right-clicking the page and selecting <em>Inspect</em> or <em>View Page Source</em>.
+        </p>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>🕵️ Room 1 of 2 | Escape The Website Challenge</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

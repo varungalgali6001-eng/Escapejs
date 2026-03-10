@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape The Website Challenge — Web Gaming / Interactive Challenge</title>
+    <meta name="description"
+        content="A browser-based puzzle game where clues are hidden inside the website itself. Inspect, hover, solve, and escape!" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+    ╔══════════════════════════════════════╗
+    ║  👀 CURIOUS PLAYER DETECTED...       ║
+    ║                                      ║
+    ║  You're already inspecting the page! ║
+    ║  That's exactly the right mindset.   ║
+    ║                                      ║
+    ║  CLUE #0: The game begins when       ║
+    ║  you press "Start Challenge".        ║
+    ║  But look carefully at every page.   ║
+    ║  Not everything is what it seems.    ║
+    ╚══════════════════════════════════════╝
+    -->
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <h1 class="logo">🔐 Escape<span>TheWeb</span></h1>
+        <p class="tagline">Can you find the clues hidden in plain sight?</p>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🕵️ Web Gaming / Interactive Challenge</div>
+            <h2>Find the Clues. Solve the Puzzle. Escape.</h2>
+            <p>
+                Welcome to <strong>Escape The Website Challenge</strong> — a browser-based puzzle game
+                where the clues are hidden inside the very website you're looking at.
+                Inspect elements, hover over secrets, and think outside the box.
+            </p>
+            <p id="bestTimeDisplay" class="best-time-hero"></p>
+            <a href="room1.html" class="btn-start" id="startBtn">🚀 Start Challenge</a>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS SECTION ===== -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p class="section-sub">Four stages, infinite secrets. Here's your roadmap.</p>
+        <div class="steps">
+            <div class="step">
+                <span class="step-icon">🔍</span>
+                <h3>Explore</h3>
+                <p>Browse the website and look for anything unusual — hidden text, odd comments, and secret elements.</p>
+            </div>
+            <div class="step">
+                <span class="step-icon">🧩</span>
+                <h3>Solve</h3>
+                <p>Use the clues you find to answer puzzles and enter the correct secret codes.</p>
+            </div>
+            <div class="step">
+                <span class="step-icon">🚪</span>
+                <h3>Unlock</h3>
+                <p>Correct answers unlock the next stage. Progress is saved so you never lose your place.</p>
+            </div>
+            <div class="step">
+                <span class="step-icon">🏆</span>
+                <h3>Escape!</h3>
+                <p>Complete all rooms to reach the Final Escape Screen and claim your victory!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCT CONCEPT SECTION ===== -->
+    <section class="concept-section">
+        <h2>What Is This?</h2>
+        <p class="section-sub">A new kind of web experience that rewards curiosity.</p>
+        <div class="concept-grid">
+            <div class="concept-card">
+                <span class="concept-icon">🌐</span>
+                <h3>The Website IS the Puzzle</h3>
+                <p>Unlike traditional games, <em>Escape The Website</em> hides clues inside the actual HTML, CSS, and
+                    JavaScript of the page. Right-click, inspect, and dig deeper to find them.</p>
+            </div>
+            <div class="concept-card">
+                <span class="concept-icon">🔒</span>
+                <h3>Progressive Room Unlocking</h3>
+                <p>Each room is locked until you solve the previous one. Your progress is saved in your browser — so you
+                    can take breaks and come back anytime.</p>
+            </div>
+            <div class="concept-card">
+                <span class="concept-icon">⏱️</span>
+                <h3>Race Against the Clock</h3>
+                <p>A timer starts the moment you enter Room 1 and keeps running across all rooms. Solve faster to set a
+                    new personal best time!</p>
+            </div>
+            <div class="concept-card">
+                <span class="concept-icon">🤓</span>
+                <h3>Learn While You Play</h3>
+                <p>Along the way you'll naturally learn about HTML structure, browser dev tools, CSS tricks, and how
+                    websites are built — all through fun exploration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING / MODES SECTION ===== -->
+    <section class="pricing">
+        <h2>Choose Your Mode</h2>
+        <p class="pricing-sub">Start for free — upgrade for more challenges.</p>
+        <div class="pricing-cards">
+
+            <div class="card">
+                <div class="card-badge">Current</div>
+                <h3>🆓 Beginner</h3>
+                <p class="price">₹0 / forever</p>
+                <ul>
+                    <li>✅ 2 Escape Rooms</li>
+                    <li>✅ Progress saved locally</li>
+                    <li>✅ Timer tracking</li>
+                    <li>✅ Full puzzle experience</li>
+                    <li>❌ No leaderboard</li>
+                </ul>
+                <a href="room1.html" class="btn-outline">Play Free</a>
+            </div>
+
+            <div class="card card-highlight">
+                <div class="card-badge badge-premium">Coming Soon</div>
+                <h3>⭐ Premium</h3>
+                <p class="price">₹99 / month</p>
+                <ul>
+                    <li>✅ Advanced escape levels</li>
+                    <li>✅ Timed challenge mode</li>
+                    <li>✅ Leaderboard ranking</li>
+                    <li>✅ New rooms every month</li>
+                    <li>✅ Hints &amp; solution reveals</li>
+                </ul>
+                <a href="#" class="btn-solid" aria-disabled="true">Coming Soon</a>
+            </div>
+
+            <div class="card">
+                <div class="card-badge">Future Scope</div>
+                <h3>🏁 Timed Mode</h3>
+                <p class="price">Included in Premium</p>
+                <ul>
+                    <li>🔥 Beat the clock</li>
+                    <li>🔥 Countdown per room</li>
+                    <li>🔥 Penalty for wrong answers</li>
+                    <li>🔥 Speed leaderboard</li>
+                    <li>🔥 Weekly tournaments</li>
+                </ul>
+                <a href="#" class="btn-solid" aria-disabled="true">Coming Soon</a>
+            </div>
+
+        </div>
+        <p class="future-note">
+            <em>🗺️ Leaderboard ranking, timed challenge mode, and premium advanced levels are planned as future scope
+                and will be released in upcoming updates.</em>
+        </p>
+    </section>
+
+    <!-- ===== RESET PROGRESS ===== -->
+    <section class="reset-section">
+        <h3>🔄 Reset Your Progress</h3>
+        <p class="reset-note">Use this to start fresh and try to beat your best time.</p>
+        <button id="resetBtn" class="btn-reset">🔄 Reset My Progress</button>
+        <p id="resetMsg" class="reset-msg"></p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <p>© 2025 EscapeTheWeb | Web Gaming / Interactive Challenge</p>
+        <p class="footer-note">Built with HTML · CSS · Vanilla JavaScript</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Escape | Escape The Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+    ===== FINAL PAGE =====
+    Congratulations, explorer.
+    You solved the website and escaped successfully.
+    Check your total time and best time below.
+    -->
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">🔐 Escape<span>TheWeb</span></h1>
+        <a href="index.html" class="nav-back">← Back to Home</a>
+    </header>
+
+    <main class="final-container">
+        <div class="trophy-anim">🏆</div>
+        <h2 class="final-heading">You Escaped!</h2>
+        <p class="final-sub">
+            Congratulations! You solved all clues, completed every room, and escaped the website.
+        </p>
+
+        <div class="results-box">
+            <p class="result-item" id="finalTime">⏱ You completed it in: 00:00</p>
+            <p class="result-item best-time-final" id="finalBestTime">🏅 Best Time Ever: No record yet</p>
+        </div>
+
+        <div class="star-rating" id="starRating"></div>
+        <p class="star-label" id="starLabel">⭐ Calculating your performance...</p>
+
+        <div class="recap-grid">
+            <div class="recap-item">
+                <span class="recap-icon">🔍</span>
+                <span>Inspected clues hidden inside HTML comments and attributes</span>
+                <span class="recap-badge">Solved</span>
+            </div>
+            <div class="recap-item">
+                <span class="recap-icon">🧩</span>
+                <span>Completed the sequence and typing bonus puzzles</span>
+                <span class="recap-badge">Solved</span>
+            </div>
+            <div class="recap-item">
+                <span class="recap-icon">⏱️</span>
+                <span>Finished the full escape challenge with timer tracking</span>
+                <span class="recap-badge badge-gold">Complete</span>
+            </div>
+        </div>
+
+        <div class="final-actions">
+            <a href="room1.html" class="btn-start">🔁 Play Again</a>
+            <button id="finalResetBtn" class="btn-reset">🗑 Reset Progress</button>
+        </div>
+
+        <p class="final-note">
+            Thanks for playing Escape The Website Challenge.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <p>🏁 Final Escape Screen | Escape The Website Challenge</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

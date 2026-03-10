@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room 2 — The Cipher Room | Escape The Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+    ===== ROOM 2 SECRET NOTES =====
+    Welcome to Room 2. You've made it past Room 1!
+    But the real challenge starts here.
+
+    CLUE #2A: Think of a word that means
+    "a secret method of writing".
+    Used by spies and cryptographers.
+
+    CLUE #2B: The scrambled word below is your key.
+    Unscramble it. Then type the REAL word below.
+    ================================
+    -->
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">🔐 Escape<span>TheWeb</span></h1>
+        <a href="index.html" class="nav-back">← Back to Home</a>
+    </header>
+
+    <div class="room-container">
+
+        <div class="timer-display" id="timerDisplay">⏱ Time: 00:00</div>
+
+        <div class="room-progress">
+            <span class="progress-dot done">✓</span>
+            <span class="progress-line progress-line-done"></span>
+            <span class="progress-dot active">2</span>
+            <span class="progress-line"></span>
+            <span class="progress-dot">🏆</span>
+        </div>
+
+        <h2 class="room-title">🔐 Room 2 — The Cipher Room</h2>
+        <p class="room-desc">
+            You survived Room 1! But Room 2 is trickier.
+            The clue is <em>scrambled</em>. Unscramble it, then enter the real word below.
+        </p>
+
+        <div class="clue-box">
+            <p>🔀 <strong>Scrambled Clue</strong> — Unscramble the letters to find the answer:</p>
+            <div class="scrambled-word" id="scrambledDisplay">
+                <span class="letter-tile">R</span>
+                <span class="letter-tile">E</span>
+                <span class="letter-tile">H</span>
+                <span class="letter-tile">I</span>
+                <span class="letter-tile">C</span>
+                <span class="letter-tile">P</span>
+            </div>
+
+            <p class="hidden-clue">
+                Rearrange all 6 letters to find a word meaning "a secret code or method of encryption."
+            </p>
+        </div>
+
+        <!--
+            Look at the div below in browser DevTools.
+            It has a special attribute that gives you a big hint.
+            Right-click → Inspect → look at the attributes.
+        -->
+        <div
+            class="clue-box"
+            data-secret="This word is used when breaking codes. Think: Julius Caesar used a ______."
+            aria-label="Secret: the answer is a 6-letter word for a secret writing system"
+            title="Inspect this element! The data-secret attribute holds a clue."
+        >
+            <p>🕵️ <strong>Inspector's Box</strong> — Right-click and inspect this element carefully.</p>
+            <p class="inspect-note">
+                (Hint: look at the element's <code class="code-highlight">data-secret</code> and
+                <code class="code-highlight">aria-label</code> attributes.)
+            </p>
+            <p class="hidden-clue">Julius Caesar used one to send secret messages to his armies. Six letters.</p>
+        </div>
+
+        <div class="keyboard-puzzle">
+            <h3 class="keyboard-title">⌨️ Keyboard Challenge</h3>
+            <p class="keyboard-note">
+                Type the following phrase using your keyboard to reveal a bonus clue:<br>
+                <strong class="keyboard-word">"decode"</strong> — type it now (case-insensitive):
+            </p>
+
+            <div class="keyboard-listener-box" id="keyListenerBox" tabindex="0">
+                <span id="keyDisplayText">🖱️ Click here, then type: <strong>decode</strong></span>
+                <input
+                    type="text"
+                    id="keyboardInput"
+                    class="invisible-input"
+                    autocomplete="off"
+                    maxlength="20"
+                />
+            </div>
+
+            <p class="feedback" id="keyFeedback"></p>
+
+            <div id="keyClueRevealed" class="revealed-clue">
+                🎉 Keyboard clue unlocked: <em>"The word you need is what a spy uses to keep messages secret. It's also the name of a classic encryption technique."</em>
+            </div>
+        </div>
+
+        <div class="code-form">
+            <label for="room2Input">🔑 Enter the secret word to unlock the Final Room:</label>
+            <input
+                type="text"
+                id="room2Input"
+                placeholder="Type the unscrambled word..."
+                autocomplete="off"
+            />
+            <button id="room2SubmitBtn">🔓 Submit &amp; Escape!</button>
+            <p class="feedback" id="room2Feedback"></p>
+        </div>
+
+        <p class="room-hint-footer">
+            💬 Stuck? Re-read the scrambled letters. The word means "secret code". Think spy movies!
+        </p>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>🕵️ Room 2 of 2 | Escape The Website Challenge</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
